@@ -1,0 +1,2 @@
+class InnerTextsController < ApplicationController
+end

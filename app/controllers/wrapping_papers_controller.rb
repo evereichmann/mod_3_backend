@@ -1,0 +1,2 @@
+class WrappingPapersController < ApplicationController
+end
