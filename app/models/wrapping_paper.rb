@@ -1,4 +1,6 @@
 class WrappingPaper < ApplicationRecord
     belongs_to :user
-    has_many :images, through: :wrapping_paper_image
+    has_one :inner_text
+    has_many :wrapping_paper_images
+    has_many :images, through: :wrapping_paper_images
 end
