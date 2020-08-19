@@ -36,6 +36,7 @@ class WrappingPapersController < ApplicationController
     private
 
     def wrapping_paper_params
-        params.require(:wrapping_paper).permit(:name, :layout, :user_id)
-    end    
+        params.require(:wrapping_paper).permit(:name, :layout, :user_id, :user{:username, :password}, :inner_text{:inner_text}, :images[{:name, :img_url}])
+    end  
+
 end
