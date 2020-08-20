@@ -1,3 +1,3 @@
 class InnerText < ApplicationRecord
-    belongs_to :wrapping_paper
+    # belongs_to :wrapping_paper
 end
